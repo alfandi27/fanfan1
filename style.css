@@ -1,0 +1,80 @@
+body {
+      font-family: 'Inter', sans-serif;
+    }
+    .transition-height {
+      transition: max-height 0.3s ease-out;
+    }
+
+    .transition-height {
+      transition: max-height 0.3s ease-out;
+    }
+
+    /* Custom classes that use the theme variables */
+    .bg-theme-primary {
+      background-color: var(--primary-color);
+    }
+
+    .bg-theme-primary-light {
+      background-color: var(--primary-light);
+    }
+
+    .hover\:bg-theme-primary-hover:hover {
+      background-color: var(--primary-hover);
+    }
+
+    .text-theme-primary {
+      color: var(--primary-color);
+    }
+
+    .tab-btn {
+    color: #6B7280;
+    border-color: transparent;
+    position: relative;
+  }
+
+  .tab-btn:hover {
+    color: var(--primary-color);
+  }
+
+  .active-tab {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+
+  .tab-content {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .tab-content.hidden {
+    display: none;
+  }
+
+  nav[aria-label="Tabs"] {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Untuk mendukung scrolling halus di iOS */
+  scrollbar-width: thin; /* Kurangi lebar scrollbar untuk estetika */
+}
+
+nav[aria-label="Tabs"]::-webkit-scrollbar {
+  height: 6px; /* Tinggi scrollbar */
+}
+
+nav[aria-label="Tabs"]::-webkit-scrollbar-thumb {
+  background-color: #969aa144;
+  border-radius: 4px;
+}
+
+.tab-btn {
+  white-space: nowrap; /* Cegah teks tab membungkus */
+  flex-shrink: 0; /* Mencegah elemen mengecil */
+  padding: 0.5rem 1rem; /* Atur padding */
+}
+
+@media (max-width: 768px) {
+  .tab-btn {
+    font-size: 0.875rem; /* Kurangi ukuran font di layar kecil */
+    padding: 0.5rem 0.75rem; /* Sesuaikan padding */
+  }
+}
